@@ -11,15 +11,12 @@
 //}
 
 // Fill the blank to make the code work
+// DON'T remove any code line
 fn main() {
-    let numbers = (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048);
+    let mut v = String::from("hello,");
+    let r = &mut v;
 
-    match numbers {
-        __ => {
-           assert_eq!(first, 2);
-           assert_eq!(last, 2048);
-        }
+    match r {
+       value => value.push_str(" world!") 
     }
-
-    println!("Success!");
 }
